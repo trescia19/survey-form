@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form using HTML and CSS
+    </title>
+
+    <style>
+        /* Styling the Body element 
+        i.e. Color, Font, Alignment */
+        body {
+            background-color: #6b6969;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #48b180;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 27px;
+            width: 50%;
+
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <h1>Favorite Food Survey</h1>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+            <!-- Input Type Text -->
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+            <!-- Input Type Email -->
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <!-- Input Type Text -->
+            <input type="text" id="age" placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label for="favorite-food" id="label-favorite-food">
+                What is your favorite food?
+            </label>
+            <!-- Input Type Text -->
+            <input type="text" id="favorite-food" placeholder="Enter your favorite food" />
+        </div>
+
+        <div class="form-control">
+            <label for="meal-time" id="label-meal-time">
+                When do you usually eat your favorite food?
+            </label>
+            <!-- Dropdown options -->
+            <select name="meal-time" id="meal-time">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snack">Snack</option>
+                <option value="anytime">Anytime</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>How often do you eat it?</label>
+            <!-- Input Type Radio Button -->
+            <label for="frequency-1">
+                <input type="radio" id="frequency-1" name="frequency" value="daily" /> Daily
+            </label>
+            <label for="frequency-2">
+                <input type="radio" id="frequency-2" name="frequency" value="weekly" /> Weekly
+            </label>
+            <label for="frequency-3">
+                <input type="radio" id="frequency-3" name="frequency" value="monthly" /> Monthly
+            </label>
+            <label for="frequency-4">
+                <input type="radio" id="frequency-4" name="frequency" value="rarely" /> Rarely
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Do you prefer homemade or restaurant-prepared food?</label>
+            <!-- Input Type Checkbox -->
+            <label for="homemade">
+                <input type="checkbox" id="homemade" name="preference" value="homemade" /> Homemade
+            </label>
+            <label for="restaurant">
+                <input type="checkbox" id="restaurant" name="preference" value="restaurant" /> Restaurant
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or additional information
+            </label>
+            <!-- Multi-line Text Input Control -->
+            <textarea name="comment" id="comment" placeholder="Enter any additional comments here"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+
+</body>
+
+</html>
